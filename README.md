@@ -12,7 +12,7 @@ You will need:
 Clone this repository:
 
 ```bash
-$ git clone git@github.com:torqueforge/poodgate-2016.git
+$ git clone https://github.com/ranicas/PoodgateDemo
 ```
 
 Change directories so that you are in the project:
