@@ -1,5 +1,9 @@
 class Bottles
 
+  def song
+    verses(99,0)
+  end
+
   def verses(start_count, end_count)
     (end_count..start_count).map { |v| verse(v) }
                             .reverse.join("\n")
