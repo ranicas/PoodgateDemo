@@ -1,7 +1,8 @@
 class Bottles
 
-  def verses(*args)
-    args.map { |v| verse(v) }.join("\n")
+  def verses(start_count, end_count)
+    (end_count..start_count).map { |v| verse(v) }
+                            .reverse.join("\n")
   end
 
   def verse(count)
