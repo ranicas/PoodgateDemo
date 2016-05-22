@@ -1,5 +1,9 @@
 class Bottles
 
+  def verses(*args)
+    args.map { |v| verse(v) }.join("\n")
+  end
+
   def verse(count)
     if count == 0
       "No more bottles of beer on the wall, " +
