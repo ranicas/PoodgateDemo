@@ -5,12 +5,7 @@ class Bottles
   end
 
   def verses(count, last)
-    output = []
-    while count >= last
-      output << verse(count)
-      count -= 1
-    end
-    output.join("\n")
+    (count..last).reduce([]) { |output, i| output << verse(i) }.join("\n")
   end
 
   def verse(count)
